@@ -20,4 +20,4 @@ def paly():
       else:
           start=b
 if __name__=='__main__':
-  paly()
+   paly()
