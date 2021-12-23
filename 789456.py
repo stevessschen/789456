@@ -19,5 +19,3 @@ def paly():
         st.write("輸入不合法,請重新輸入:")
       else:
           start=b
-if __name__=='__main__':
-  paly()
