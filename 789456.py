@@ -1,6 +1,6 @@
 __author__="teacher"
 import random
-st streamlit as st 
+import streamlit as st 
 def paly():
   a=random.randint(2,99)
   start,end=1,100
