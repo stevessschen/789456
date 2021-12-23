@@ -1,7 +1,7 @@
 __author__="teacher"
 import random
 import streamlit as st
-def paly():
+def play():
   a=random.randint(2,99)
   start,end=1,100
   while 1:
