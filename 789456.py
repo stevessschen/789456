@@ -9,7 +9,6 @@ if confirm_input:
   st.session_state.start = 1
   
 #start,end=1,100
-def paly():
 b=st.number_input("請輸入1到100之間的整數:")
 confirm_input2 = st.button('輸入確認')
 if confirm_input2:
@@ -26,4 +25,3 @@ if confirm_input2:
     else:
       st.session_state.start=b
 if __name__=='__main__':
-  paly()
