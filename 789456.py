@@ -7,8 +7,6 @@ if confirm_input:
   st.session_state.c = c
   st.session_state.start = 1
   st.session_state.end = 100
-  
-#start,end=1,100
 x=st.number_input("請輸入1到100之間的整數:")
 confirm_input2 = st.button('輸入確認')
 if confirm_input2:
