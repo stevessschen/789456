@@ -1,6 +1,7 @@
 __author__="teacher"
 import random
 import streamlit as st
+def paly():
 confirm_input = st.button('確認產生答案')
 if confirm_input:
   a=random.randint(2,99)
