@@ -10,9 +10,9 @@ start,end=1,100
 b=st.number_input("請輸入1到100之間的整數:")
 confirm_input2 = st.button('輸入確認')
 if confirm_input2:
-  if b==a:
+  if b==st.session_state.a:
     st.write("恭喜你中獎了")
-  elif b>a:
+  elif b>st.session_state.a:
     if b>=end:
       st.write("輸入不合法,請重新輸入:")
     else:
