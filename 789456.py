@@ -5,8 +5,6 @@ confirm_input = st.button('確認產生答案')
 if confirm_input:
   c=random.randint(2,99)
   st.session_state.c = c
-  st.session_state.start = 1
-  st.session_state.end = 100
   x=st.number_input("請輸入1到100之間的整數:")
   confirm_input2 = st.button('輸入確認')
   if confirm_input2:
