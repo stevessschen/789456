@@ -12,7 +12,6 @@ confirm_input2 = st.button('輸入確認')
 if confirm_input2:
   if b==a:
     st.write("恭喜你中獎了")
-    break
   elif b>a:
     if b>=end:
       st.write("輸入不合法,請重新輸入:")
