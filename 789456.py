@@ -9,7 +9,6 @@ if confirm_input:
  st.session_state.start,st.session_state.end = 1,100
  st.write('c=', st.session_state.c)
   
-  
 x=st.number_input("請輸入%g到%g之間的整數:"%(start,end))
 confirm_input2 = st.button('輸入確認')
 if confirm_input2:
