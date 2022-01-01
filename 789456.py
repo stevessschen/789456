@@ -11,7 +11,6 @@ if confirm_input:
 
 start = st.session_state.start = 1
 end = st.session_state.end = 100
-c = st.session_state.c = random.randint(2,99)
 x=st.number_input("請輸入%g到%g之間的整數:"%(start,end))
 confirm_input2 = st.button('輸入確認')
 if confirm_input2:
