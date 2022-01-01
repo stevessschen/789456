@@ -11,7 +11,6 @@ if confirm_input:
 
 x=st.number_input("請輸入1到100之間的整數:"(start,end))
 confirm_input2 = st.button('輸入確認')
-st.write(請輸入1到100之間的整數:"(start,end))
 if confirm_input2:
   if x==st.session_state.c:
     st.write("恭喜你中獎了")
