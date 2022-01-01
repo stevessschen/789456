@@ -24,4 +24,3 @@ else:
     st.write("輸入不合法,請重新輸入:")
   else:
    st.session_state.start=x
-if name == "main":
