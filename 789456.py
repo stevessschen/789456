@@ -9,18 +9,18 @@ if confirm_input:
   st.session_state.start,st.session_state.end = 1,100
   st.write('c=', st.session_state.c)
 
-x=st.number_input("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end))
+x=st.number_input("請輸入%g到%g之間的整數:"%(1,100))
 confirm_input2 = st.button('輸入確認')
 if confirm_input2:
   if x==st.session_state.c:
     st.write("恭喜你中獎了")
 elif x>st.session_state.c:
-  if x>=end:
+  if x>=100:
     st.write("輸入不合法,請重新輸入:")
   else:
-    end=x
+    100=x
 else:
-  if x<=start:
+  if x<=1:
     st.write("輸入不合法,請重新輸入:")
   else:
-    start=x
+    1=x
