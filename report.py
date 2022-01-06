@@ -20,7 +20,7 @@ if confirm_input2:
   else:
    st.session_state.end=x
  else:
- if x<=st.session_state.start:
+  if x<=st.session_state.start:
    st.write("輸入不合法,請重新輸入:")
- else:
-  st.session_state.start=x
+  else:
+   st.session_state.start=x
