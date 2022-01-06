@@ -10,8 +10,7 @@ if confirm_input:
  st.write('c=', st.session_state.c)
  
 
-if confirm_input:
- x=st.number_input("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end)) 
+x=st.number_input("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end)) 
 st.write("「輸入確認」鍵記得按兩次喔") 
 confirm_input2 = st.button('輸入確認')
 if confirm_input2:
