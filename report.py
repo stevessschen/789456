@@ -11,7 +11,7 @@ if confirm_input:
  
 
 x=st.number_input("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end)) 
-st.write("「輸入確認」鍵記得按兩次喔,否則可能導致程式慈法正常運行!") 
+st.write("「輸入確認」鍵記得按兩次喔,否則可能導致程式無法正常運行!") 
 confirm_input2 = st.button('輸入確認')
 if confirm_input2:
  if x==st.session_state.c:
