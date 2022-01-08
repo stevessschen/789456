@@ -29,12 +29,14 @@ if st.button('輸入確認'):
    st.write("幹到屁眼了吧")
    image = Image.open('0.gif')
    st.image(image)
+   gif_runner = st.image(gif_path)
 
  if x>st.session_state.c:
   if x>=st.session_state.end:
    st.write("不合法啦,白痴:")
    image = Image.open('1.gif')
    st.image(image)
+   gif_runner = st.image(gif_path)
 
   else:
    st.session_state.end=x
@@ -43,6 +45,7 @@ if st.button('輸入確認'):
    st.write("不合法啦,白痴:")
    image = Image.open('1.gif')
    st.image(image)
+   gif_runner = st.image(gif_path)
 
   else:
    st.session_state.start=x
