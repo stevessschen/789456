@@ -27,7 +27,7 @@ st.write("「輸入確認」鍵記得按兩次喔,否則可能導致程式無法
 #confirm_input2 = 
 if st.button('輸入確認'):
  if x==st.session_state.c:
-     st.write("核爆了吧")
+     st.subheader("核爆了吧")
      file_ = open("output_ntyylX.gif", "rb")
      contents = file_.read()
      data_url = base64.b64encode(contents).decode("utf-8")
