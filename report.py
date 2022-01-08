@@ -6,7 +6,7 @@ from PIL import Image
 st.set_page_config(
  page_title='猛祺的期末報告',
  page_icon='🙈')
-st.title('猛祺🙈的💣定時炸彈🧨,要炸就炸到你心坎裡啦,👉👌')
+st.title('猛祺🙈的💣定時炸彈🧨,要炸就炸到你心坎裡啦')
 confirm_input = st.button('確認產生答案')
 if "start" not in st.session_state:
  st.session_state.start = 1
@@ -27,7 +27,7 @@ st.write("「輸入確認」鍵記得按兩次喔,否則可能導致程式無法
 #confirm_input2 = 
 if st.button('輸入確認'):
  if x==st.session_state.c:
-     st.write("幹到屁眼了吧")
+     st.write("核爆了吧")
      file_ = open("0.gif", "rb")
      contents = file_.read()
      data_url = base64.b64encode(contents).decode("utf-8")
@@ -39,7 +39,7 @@ if st.button('輸入確認'):
 
  if x>st.session_state.c:
    if x>=st.session_state.end:
-      st.write("不合法啦,白痴:")
+      st.write("不合法啦,好好選新的數字:")
       file_ = open("1.gif", "rb")
       contents = file_.read()
       data_url = base64.b64encode(contents).decode("utf-8")
@@ -52,7 +52,7 @@ if st.button('輸入確認'):
      st.session_state.end=x
  if x<st.session_state.c:
       if x<=st.session_state.start:
-         st.write("不合法啦,白痴:")
+         st.write("不合法啦,好好選新的數字:")
          file_ = open("1.gif", "rb")
          contents = file_.read()
          data_url = base64.b64encode(contents).decode("utf-8")
