@@ -28,12 +28,12 @@ st.write("「輸入確認」鍵記得按兩次喔,否則可能導致程式無法
 if st.button('輸入確認'):
  if x==st.session_state.c:
      st.write("核爆了吧")
-     file_ = open("0.gif", "rb")
+     file_ = open("output_ntyylX.gif", "rb")
      contents = file_.read()
      data_url = base64.b64encode(contents).decode("utf-8")
      file_.close()
      st.markdown(
-     f'<img src="data:image/gif;base64,{data_url}" alt="0 gif">',
+     f'<img src="data:image/gif;base64,{data_url}" alt="output_ntyylX gif">',
      unsafe_allow_html=True,
      )
 
