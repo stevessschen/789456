@@ -27,20 +27,20 @@ st.write("「輸入確認」鍵記得按兩次喔,否則可能導致程式無法
 #confirm_input2 = 
 if st.button('輸入確認'):
  if x==st.session_state.c:
-   st.write("幹到屁眼了吧")
-    file_ = open("0.gif", "rb")
-    contents = file_.read()
-    data_url = base64.b64encode(contents).decode("utf-8")
-    file_.close()
-    st.markdown(
-    f'<img src="data:image/gif;base64,{data_url}" alt="0 gif">',
-    unsafe_allow_html=True,
-    )
+     st.write("幹到屁眼了吧")
+     file_ = open("0.gif", "rb")
+     contents = file_.read()
+     data_url = base64.b64encode(contents).decode("utf-8")
+     file_.close()
+     st.markdown(
+     f'<img src="data:image/gif;base64,{data_url}" alt="0 gif">',
+     unsafe_allow_html=True,
+     )
 
 if x>st.session_state.c:
  if x>=st.session_state.end:
-   st.write("不合法啦,白痴:")
-    file_ = open("1.gif", "rb")
+     st.write("不合法啦,白痴:")
+     file_ = open("1.gif", "rb")
      contents = file_.read()
      data_url = base64.b64encode(contents).decode("utf-8")
      file_.close()
@@ -52,14 +52,14 @@ else:
    st.session_state.end=x
    if x<st.session_state.c:
     if x<=st.session_state.start:
-     st.write("不合法啦,白痴:")
-     file_ = open("1.gif", "rb")
-      contents = file_.read()
-      data_url = base64.b64encode(contents).decode("utf-8")
-      file_.close()
-      st.markdown(
-      f'<img src="data:image/gif;base64,{data_url}" alt="1 gif">',
-      unsafe_allow_html=True,
-      )
+       st.write("不合法啦,白痴:")
+       file_ = open("1.gif", "rb")
+       contents = file_.read()
+       data_url = base64.b64encode(contents).decode("utf-8")
+       file_.close()
+       st.markdown(
+       f'<img src="data:image/gif;base64,{data_url}" alt="1 gif">',
+       unsafe_allow_html=True,
+       )
 else:
    st.session_state.start=x
