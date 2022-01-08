@@ -1,8 +1,10 @@
 #__author__="teacher"
 import random
 import streamlit as st
+from PIL import Image
 st.set_page_config(
  page_title='猛祺的期末報告')
+ page_icon='🙈'
 st.title('猛祺的定時炸彈')
 confirm_input = st.button('確認產生答案')
 if "start" not in st.session_state:
