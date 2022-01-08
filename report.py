@@ -5,7 +5,7 @@ from PIL import Image
 st.set_page_config(
  page_title='猛祺的期末報告',
  page_icon='🙈')
-st.title('猛祺的定時炸彈,炸到你心坎裡')
+st.title('猛祺🙈的定時炸彈,要炸就炸到你心坎裡啦,幹屁眼')
 confirm_input = st.button('確認產生答案')
 if "start" not in st.session_state:
  st.session_state.start = 1
