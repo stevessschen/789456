@@ -61,6 +61,5 @@ else:
      f'<img src="data:image/gif;base64,{data_url}" alt="1 gif">',
      unsafe_allow_html=True,
      )
-
 else:
-     st.session_state.start=x
+ st.session_state.start=x
