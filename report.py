@@ -27,13 +27,22 @@ st.write("「輸入確認」鍵記得按兩次喔,否則可能導致程式無法
 if st.button('輸入確認'):
  if x==st.session_state.c:
    st.write("幹到屁眼了吧")
+   image = Image.open('0.gif')
+  st.image(image)
+
  if x>st.session_state.c:
   if x>=st.session_state.end:
    st.write("不合法啦,白痴:")
+   image = Image.open('1.gif')
+  st.image(image)
+
   else:
    st.session_state.end=x
  if x<st.session_state.c:
   if x<=st.session_state.start:
    st.write("不合法啦,白痴:")
+   image = Image.open('1.gif')
+  st.image(image)
+
   else:
    st.session_state.start=x
