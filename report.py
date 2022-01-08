@@ -50,6 +50,7 @@ if st.button('CONFIRM'):
       )
    else:
      st.session_state.end=x
+     
  if x<st.session_state.c:
       if x<=st.session_state.start:
          st.write("不合法啦,好好選新的數字:")
