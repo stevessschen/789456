@@ -6,8 +6,8 @@ from PIL import Image
 st.set_page_config(
  page_title='猛祺的期末報告',
  page_icon='🙈')
-st.title('猛祺🙈的💣定時核彈🧨,正恩炸到你心坎裡')
-confirm_input = st.button('開始/重新遊戲')
+st.title('猛祺🙈的💣定時核彈🧨,炸到你心坎裡')
+confirm_input = st.button('開始製造💣/重新製造💣')
 if "start" not in st.session_state:
  st.session_state.start = 1
 if "end" not in st.session_state:
