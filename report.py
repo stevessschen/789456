@@ -37,7 +37,7 @@ if st.button('輸入確認'):
      unsafe_allow_html=True,
      )
 
-  if x>st.session_state.c:
+ if x>st.session_state.c:
    if x>=st.session_state.end:
       st.write("不合法啦,白痴:")
       file_ = open("1.gif", "rb")
@@ -50,7 +50,7 @@ if st.button('輸入確認'):
       )
    else:
      st.session_state.end=x
-  if x<st.session_state.c:
+ if x<st.session_state.c:
       if x<=st.session_state.start:
          st.write("不合法啦,白痴:")
          file_ = open("1.gif", "rb")
