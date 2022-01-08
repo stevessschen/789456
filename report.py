@@ -5,7 +5,7 @@ from PIL import Image
 st.set_page_config(
  page_title='猛祺的期末報告',
  page_icon='🙈')
-st.title('猛祺🙈的定時炸彈,要炸就炸到你心坎裡啦,幹屁眼')
+st.title('猛祺🙈的💣定時炸彈🧨,要炸就炸到你心坎裡啦,👉👌')
 confirm_input = st.button('確認產生答案')
 if "start" not in st.session_state:
  st.session_state.start = 1
@@ -26,14 +26,14 @@ st.write("「輸入確認」鍵記得按兩次喔,否則可能導致程式無法
 #confirm_input2 = 
 if st.button('輸入確認'):
  if x==st.session_state.c:
-   st.write("恭喜你中獎了")
+   st.write("幹到屁眼了吧")
  if x>st.session_state.c:
   if x>=st.session_state.end:
-   st.write("輸入不合法,請重新輸入:")
+   st.write("不合法啦,白痴:")
   else:
    st.session_state.end=x
  if x<st.session_state.c:
   if x<=st.session_state.start:
-   st.write("輸入不合法,請重新輸入:")
+   st.write("不合法啦,白痴:")
   else:
    st.session_state.start=x
