@@ -22,9 +22,8 @@ if confirm_input:
 
 st.write('c=', st.session_state.c)
 
-x=st.sidebar.text_input("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end)) 
-x=int(float(x))
-st.write('x=', x)
+#x=st.sidebar.text_input("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end)) 
+x=st.sidebar.number_input("請輸入整數?")
 
 if x>st.session_state.c:
  if x>=st.session_state.end:
@@ -79,3 +78,5 @@ if x<st.session_state.c:
        )
     else:
        st.session_state.start=x
+
+st.write("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end)) 
