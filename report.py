@@ -37,7 +37,9 @@ if x<st.session_state.c:
     else:
        st.session_state.start=x
 
-st.write("「CONFIRM」鍵記得按兩次喔,否則可能導致系統無法正常運行!") 
+st.write("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end)) 
+
+#st.write("「CONFIRM」鍵記得按兩次喔,否則可能導致系統無法正常運行!") 
 #confirm_input2 = 
 #if st.sidebar.button('CONFIRM'):
 if x==st.session_state.c:
@@ -78,5 +80,3 @@ if x<st.session_state.c:
        )
     else:
        st.session_state.start=x
-
-st.write("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end)) 
