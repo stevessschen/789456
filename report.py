@@ -24,8 +24,10 @@ if confirm_input:
  st.session_state.end = 100
  st.session_state.start,st.session_state.end = 1,100
  st.session_state.x = 1
- st.write('c=', st.session_state.c)
- 
+ #st.write('c=', st.session_state.c)
+
+st.write('c=', st.session_state.c)
+
 if st.session_state.x > st.session_state.c:
   st.session_state.end=st.session_state.x
 else:
