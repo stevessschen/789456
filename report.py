@@ -23,7 +23,7 @@ if confirm_input:
 st.write('c=', st.session_state.c)
 
 x=st.sidebar.text_input("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end)) 
-x=int(x)
+x=int(float(x))
 st.write('x=', x)
 
 if x>st.session_state.c:
