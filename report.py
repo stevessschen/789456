@@ -37,7 +37,7 @@ st.write("「CONFIRM」鍵記得按兩次喔,否則可能導致系統無法正�
 #confirm_input2 = 
 
 if st.button('CONFIRM'):
- if x==st.session_state.c:
+ if st.session_state.x==st.session_state.c:
      st.subheader("核爆了吧!!!")
      file_ = open("output_ntyylX.gif", "rb")
      contents = file_.read()
@@ -48,9 +48,9 @@ if st.button('CONFIRM'):
      unsafe_allow_html=True,
      )
 
- if x>st.session_state.c:
-   st.session_state.end=x
-   if x>=st.session_state.end:
+ if st.session_state.x > st.session_state.c:
+   #st.session_state.end=x
+   if st.session_state.x >= st.session_state.end:
       st.write("不合法啦,好好選新的數字:")
       file_ = open("1.gif", "rb")
       contents = file_.read()
@@ -63,9 +63,9 @@ if st.button('CONFIRM'):
    #else:
      #st.session_state.end=x
      
- if x<st.session_state.c:
-   st.session_state.start=x
-   if x<=st.session_state.start:
+ if st.session_state.x < st.session_state.c:
+   #st.session_state.start=x
+   if st.session_state.x <= st.session_state.start:
      st.write("不合法啦,好好選新的數字:")
      file_ = open("1.gif", "rb")
      contents = file_.read()
