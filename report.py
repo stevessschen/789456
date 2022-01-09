@@ -46,7 +46,7 @@ st.write("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_s
 #st.write("「CONFIRM」鍵記得按兩次喔,否則可能導致系統無法正常運行!") 
 #confirm_input2 = 
 #if st.sidebar.button('CONFIRM'):
-if x==st.session_state.c and st.session_state.begin= 'y':
+if x==st.session_state.c and st.session_state.begin == 'y':
  st.subheader("核爆了吧!!!")
  file_ = open("output_ntyylX.gif", "rb")
  contents = file_.read()
@@ -57,7 +57,7 @@ if x==st.session_state.c and st.session_state.begin= 'y':
  unsafe_allow_html=True,
  )
 
-if x>st.session_state.c and st.session_state.begin= 'y' and x>0:
+if x>st.session_state.c and st.session_state.begin == 'y' and x>0:
  if x>=st.session_state.end:
     st.write("不合法啦,好好選新的數字:")
     file_ = open("1.gif", "rb")
@@ -71,7 +71,7 @@ if x>st.session_state.c and st.session_state.begin= 'y' and x>0:
  else:
    st.session_state.end=x
      
-if x<st.session_state.c and st.session_state.begin= 'y' and x>0:
+if x<st.session_state.c and st.session_state.begin == 'y' and x>0:
     if x<=st.session_state.start:
        st.write("不合法啦,好好選新的數字:")
        file_ = open("1.gif", "rb")
