@@ -27,6 +27,7 @@ if confirm_input:
  #st.write('c=', st.session_state.c)
 
 st.write('c=', st.session_state.c)
+st.write('x=', st.session_state.x)
 
 if st.session_state.x > st.session_state.c:
   st.session_state.end=st.session_state.x
