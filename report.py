@@ -23,6 +23,7 @@ if confirm_input:
  st.session_state.end = 100
  st.session_state.start,st.session_state.end = 1,100
  st.session_state.begin= 'y'
+ x=0
 
 st.write('c=', st.session_state.c)
 
