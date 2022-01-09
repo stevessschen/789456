@@ -40,7 +40,7 @@ st.write("「CONFIRM」鍵記得按兩次喔,否則可能導致系統無法正�
 #confirm_input2 = 
 
 if st.button('CONFIRM'):
- if st.session_state.x==st.session_state.c:
+ if int(st.session_state.x) == st.session_state.c:
      st.subheader("核爆了吧!!!")
      file_ = open("output_ntyylX.gif", "rb")
      contents = file_.read()
