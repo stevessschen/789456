@@ -7,7 +7,7 @@ st.set_page_config(
  page_title='猛祺的期末報告',
  page_icon='🙈')
 st.title('猛祺🙈的💣定時核彈🧨,炸到你心坎裡')
-confirm_input = st.sidebar.button('開始製造💣/重新製造💣')
+confirm_input = st.button('開始製造💣/重新製造💣')
 if "start" not in st.session_state:
  st.session_state.start = 1
 if "end" not in st.session_state:
@@ -28,7 +28,7 @@ if confirm_input:
 st.write('c=', st.session_state.c)
 
 #x=st.sidebar.text_input("請輸入%g到%g之間的整數:"%(st.session_state.start,st.session_state.end)) 
-x=st.sidebar.number_input("請輸入整數?")
+x=st.number_input("請輸入整數?", 0)
 
 if x>st.session_state.c:
  if x>=st.session_state.end:
