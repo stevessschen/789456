@@ -49,7 +49,7 @@ if st.button('CONFIRM'):
      )
 
  if st.session_state.x > st.session_state.c:
-   #st.session_state.end=x
+   st.session_state.end=st.session_state.x
    if st.session_state.x >= st.session_state.end:
       st.write("不合法啦,好好選新的數字:")
       file_ = open("1.gif", "rb")
@@ -64,7 +64,7 @@ if st.button('CONFIRM'):
      #st.session_state.end=x
      
  if st.session_state.x < st.session_state.c:
-   #st.session_state.start=x
+   st.session_state.start=st.session_state.x
    if st.session_state.x <= st.session_state.start:
      st.write("不合法啦,好好選新的數字:")
      file_ = open("1.gif", "rb")
