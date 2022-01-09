@@ -13,7 +13,7 @@ if "start" not in st.session_state:
 if "end" not in st.session_state:
  st.session_state.end = 100
 if "c" not in st.session_state:
- st.session_state.c = 1
+ st.session_state.c = 0
 if "begin" not in st.session_state:
  st.session_state.begin= 'n'
  
